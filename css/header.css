@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    background-color: #D8CFC4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    width: 90%;
+    border: 2px solid #FFEB3B;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px 5px 5px rgb(56, 70, 37);;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.header-list ul li{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.header-list ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.header-list ul{
+    display: flex;
+}
+
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+  }
+  
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.menu-panel ul li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.menu-panel ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+#burger {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+#burger:hover{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    top: 10px;
+    right: 20px;
+  }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .header-list ul li a{
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+    .menu-panel.active {
+        right: 0;
+    }
+    header{
+        position: relative;
+    }
+    #plate{
+        position: absolute;
+        left: 20px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 424px){
+
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+
+}
+@media screen and (min-width: 0px) and (max-width: 319px){
+
+}
